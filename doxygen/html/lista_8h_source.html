@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CuentaPalabras: Archivo de código fuente C:/Users/Usuario/Desktop/P-Comision-04/lista.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">CuentaPalabras<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">C:/Users/Usuario/Desktop/P-Comision-04/lista.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="lista_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LISTA_H_INCLUDED</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LISTA_H_INCLUDED</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="lista_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae9de385ef6fe9bf3360d1038396b884c">    5</a></span><span class="keyword">enum</span> {<span class="keyword">true</span> = 1, <span class="keyword">false</span> = 0};</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406">    7</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406a92c60e4be52063126e02f241fc4cd81e">    8</a></span>    <a class="code hl_enumvalue" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406a92c60e4be52063126e02f241fc4cd81e">ELEM1_MAYOR_QUE_ELEM2</a>,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406ae0e9a6c62aedeb5c7ddccbf0470048db">    9</a></span>    <a class="code hl_enumvalue" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406ae0e9a6c62aedeb5c7ddccbf0470048db">ELEM1_IGUAL_QUE_ELEM2</a>,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_enumvalue" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406af485330830afecd286ff73bd48591f50">ELEM1_MENOR_QUE_ELEM2</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406af485330830afecd286ff73bd48591f50">   11</a></span>} <a class="code hl_enumeration" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406">comparacion_resultado_t</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structelemento.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structelemento.html">elemento</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structelemento.html#aa4c2a5552e9bc49b1816ff532f558c74">   14</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structelemento.html#aa4c2a5552e9bc49b1816ff532f558c74">a</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structelemento.html#aafe80d64508a05a94be4d07b648244d0">   15</a></span>    <span class="keywordtype">char</span> *<a class="code hl_variable" href="structelemento.html#aafe80d64508a05a94be4d07b648244d0">b</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="lista_8h.html#a04b5d6edc610bfd02bf6c2265e7f287e">   18</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structelemento.html">elemento</a> <a class="code hl_struct" href="structelemento.html">elemento_t</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="lista_8h.html#a16f44793080384f49f2b20c03178a112">   20</a></span><span class="keyword">typedef</span> <a class="code hl_enumeration" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406">comparacion_resultado_t</a> (<a class="code hl_typedef" href="lista_8h.html#a16f44793080384f49f2b20c03178a112">funcion_comparacion_t</a>) (</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_struct" href="structelemento.html">elemento_t</a> *elem1, <a class="code hl_struct" href="structelemento.html">elemento_t</a> *elem2</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="lista_8h.html#abe0f51e6196c83317888de67ab042042">   24</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structcelda.html">celda</a> <a class="code hl_struct" href="structcelda.html">celda_t</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structlista.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structlista.html">lista</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structlista.html#a8b0e368ddca30f0abb44378e258bf7eb">   27</a></span>    <a class="code hl_struct" href="structcelda.html">celda_t</a>* <a class="code hl_variable" href="structlista.html#a8b0e368ddca30f0abb44378e258bf7eb">primera</a>; <span class="comment">//puntero a la primera celda de la lista</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structlista.html#a33ee6c47f36562c0d15c84bb938f0f0c">   28</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structlista.html#a33ee6c47f36562c0d15c84bb938f0f0c">cantidad</a>; <span class="comment">// cantidad de elementos de la lista</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="lista_8h.html#a3b1d37c65261cff1e7bfbecbb90e7805">   31</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structlista.html">lista</a> <a class="code hl_struct" href="structlista.html">lista_t</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//Crea una lista vacia y la devuelve.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">extern</span> <a class="code hl_struct" href="structlista.html">lista_t</a> *<a class="code hl_function" href="lista_8h.html#ac0c0668455e55a798cc3cef0a775c3ae">lista_crear</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//Inserta el elemento elem en la posicion pos de la lista.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="lista_8h.html#ab23e73d2d730d1139e89a645c57a0b79">lista_insertar</a>(<a class="code hl_struct" href="structlista.html">lista_t</a> *l, <a class="code hl_struct" href="structelemento.html">elemento_t</a> elem, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//Elimina el elemento de la posicion pos de la lista.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">extern</span> <a class="code hl_struct" href="structelemento.html">elemento_t</a> *<a class="code hl_function" href="lista_8h.html#a9a0d2e3e6b3c6a89e5cfebc27f939cc1">lista_eliminar</a>(<a class="code hl_struct" href="structlista.html">lista_t</a> *l, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//Devuelve un puntero al elemento que ocupa la posicion pos de la lista.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">extern</span> <a class="code hl_struct" href="structelemento.html">elemento_t</a> *<a class="code hl_function" href="lista_8h.html#ae29cb98ea02e002cb063d479d2de45a1">lista_elemento</a>(<a class="code hl_struct" href="structlista.html">lista_t</a> *l, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//Dada la lista l y la funcion comparar ordena la lista de acuerdo al criterio de dicha funcion.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="lista_8h.html#a7e042a4ad176ec59284b489758316698">lista_ordenar</a>(<a class="code hl_struct" href="structlista.html">lista_t</a> *l, <a class="code hl_typedef" href="lista_8h.html#a16f44793080384f49f2b20c03178a112">funcion_comparacion_t</a> comparar);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">//Devuelve la cantidad de elementos de la lista l.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">extern</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="lista_8h.html#aab22a572459d6356992225d2bc427d41">lista_cantidad</a>(<a class="code hl_struct" href="structlista.html">lista_t</a> *l);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Devuelve verdadero (distinto a 0) si la lista esta vacia, y falso (igual a 0) si la lista contiene al menos un elemento.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="lista_8h.html#a3c1ac65bdd6f72a527559029b1cd9dae">lista_vacia</a>(<a class="code hl_struct" href="structlista.html">lista_t</a> <a class="code hl_struct" href="structlista.html">lista</a>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//Borrar</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="lista_8h.html#af5c20dc36fdda681eafacaa40deaeb07">salto</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif </span><span class="comment">// LISTA_H_INCLUDED</span></div>
+<div class="ttc" id="alista_8h_html_a16f44793080384f49f2b20c03178a112"><div class="ttname"><a href="lista_8h.html#a16f44793080384f49f2b20c03178a112">funcion_comparacion_t</a></div><div class="ttdeci">comparacion_resultado_t() funcion_comparacion_t(elemento_t *elem1, elemento_t *elem2)</div><div class="ttdef"><b>Definition</b> lista.h:20</div></div>
+<div class="ttc" id="alista_8h_html_a3c1ac65bdd6f72a527559029b1cd9dae"><div class="ttname"><a href="lista_8h.html#a3c1ac65bdd6f72a527559029b1cd9dae">lista_vacia</a></div><div class="ttdeci">int lista_vacia(lista_t lista)</div><div class="ttdef"><b>Definition</b> lista.c:255</div></div>
+<div class="ttc" id="alista_8h_html_a7e042a4ad176ec59284b489758316698"><div class="ttname"><a href="lista_8h.html#a7e042a4ad176ec59284b489758316698">lista_ordenar</a></div><div class="ttdeci">int lista_ordenar(lista_t *l, funcion_comparacion_t comparar)</div><div class="ttdoc">lista_ordenar(lista_t *l, funcion_comparacion_t comparar).</div><div class="ttdef"><b>Definition</b> lista.c:227</div></div>
+<div class="ttc" id="alista_8h_html_a87e2608c75f5d20919ac20631d4ec406"><div class="ttname"><a href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406">comparacion_resultado_t</a></div><div class="ttdeci">comparacion_resultado_t</div><div class="ttdef"><b>Definition</b> lista.h:7</div></div>
+<div class="ttc" id="alista_8h_html_a87e2608c75f5d20919ac20631d4ec406a92c60e4be52063126e02f241fc4cd81e"><div class="ttname"><a href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406a92c60e4be52063126e02f241fc4cd81e">ELEM1_MAYOR_QUE_ELEM2</a></div><div class="ttdeci">@ ELEM1_MAYOR_QUE_ELEM2</div><div class="ttdef"><b>Definition</b> lista.h:8</div></div>
+<div class="ttc" id="alista_8h_html_a87e2608c75f5d20919ac20631d4ec406ae0e9a6c62aedeb5c7ddccbf0470048db"><div class="ttname"><a href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406ae0e9a6c62aedeb5c7ddccbf0470048db">ELEM1_IGUAL_QUE_ELEM2</a></div><div class="ttdeci">@ ELEM1_IGUAL_QUE_ELEM2</div><div class="ttdef"><b>Definition</b> lista.h:9</div></div>
+<div class="ttc" id="alista_8h_html_a87e2608c75f5d20919ac20631d4ec406af485330830afecd286ff73bd48591f50"><div class="ttname"><a href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406af485330830afecd286ff73bd48591f50">ELEM1_MENOR_QUE_ELEM2</a></div><div class="ttdeci">@ ELEM1_MENOR_QUE_ELEM2</div><div class="ttdef"><b>Definition</b> lista.h:10</div></div>
+<div class="ttc" id="alista_8h_html_a9a0d2e3e6b3c6a89e5cfebc27f939cc1"><div class="ttname"><a href="lista_8h.html#a9a0d2e3e6b3c6a89e5cfebc27f939cc1">lista_eliminar</a></div><div class="ttdeci">elemento_t * lista_eliminar(lista_t *l, unsigned int pos)</div><div class="ttdoc">*lista_eliminar(lista_t *l, unsigned int pos).</div><div class="ttdef"><b>Definition</b> lista.c:108</div></div>
+<div class="ttc" id="alista_8h_html_aab22a572459d6356992225d2bc427d41"><div class="ttname"><a href="lista_8h.html#aab22a572459d6356992225d2bc427d41">lista_cantidad</a></div><div class="ttdeci">unsigned int lista_cantidad(lista_t *l)</div><div class="ttdef"><b>Definition</b> lista.c:251</div></div>
+<div class="ttc" id="alista_8h_html_ab23e73d2d730d1139e89a645c57a0b79"><div class="ttname"><a href="lista_8h.html#ab23e73d2d730d1139e89a645c57a0b79">lista_insertar</a></div><div class="ttdeci">int lista_insertar(lista_t *l, elemento_t elem, unsigned int pos)</div><div class="ttdoc">lista_insertar(lista_t *l, elemento_t elem, unsigned int pos).</div><div class="ttdef"><b>Definition</b> lista.c:51</div></div>
+<div class="ttc" id="alista_8h_html_ac0c0668455e55a798cc3cef0a775c3ae"><div class="ttname"><a href="lista_8h.html#ac0c0668455e55a798cc3cef0a775c3ae">lista_crear</a></div><div class="ttdeci">lista_t * lista_crear()</div><div class="ttdoc">*lista_crear.</div><div class="ttdef"><b>Definition</b> lista.c:28</div></div>
+<div class="ttc" id="alista_8h_html_ae29cb98ea02e002cb063d479d2de45a1"><div class="ttname"><a href="lista_8h.html#ae29cb98ea02e002cb063d479d2de45a1">lista_elemento</a></div><div class="ttdeci">elemento_t * lista_elemento(lista_t *l, unsigned int pos)</div><div class="ttdoc">*lista_elemento(lista_t *l, unsigned int pos).</div><div class="ttdef"><b>Definition</b> lista.c:154</div></div>
+<div class="ttc" id="alista_8h_html_af5c20dc36fdda681eafacaa40deaeb07"><div class="ttname"><a href="lista_8h.html#af5c20dc36fdda681eafacaa40deaeb07">salto</a></div><div class="ttdeci">void salto()</div><div class="ttdef"><b>Definition</b> lista.c:8</div></div>
+<div class="ttc" id="astructcelda_html"><div class="ttname"><a href="structcelda.html">celda</a></div><div class="ttdef"><b>Definition</b> lista.c:12</div></div>
+<div class="ttc" id="astructelemento_html"><div class="ttname"><a href="structelemento.html">elemento</a></div><div class="ttdef"><b>Definition</b> lista.h:13</div></div>
+<div class="ttc" id="astructelemento_html_aa4c2a5552e9bc49b1816ff532f558c74"><div class="ttname"><a href="structelemento.html#aa4c2a5552e9bc49b1816ff532f558c74">elemento::a</a></div><div class="ttdeci">int a</div><div class="ttdef"><b>Definition</b> lista.h:14</div></div>
+<div class="ttc" id="astructelemento_html_aafe80d64508a05a94be4d07b648244d0"><div class="ttname"><a href="structelemento.html#aafe80d64508a05a94be4d07b648244d0">elemento::b</a></div><div class="ttdeci">char * b</div><div class="ttdef"><b>Definition</b> lista.h:15</div></div>
+<div class="ttc" id="astructlista_html"><div class="ttname"><a href="structlista.html">lista</a></div><div class="ttdef"><b>Definition</b> lista.h:26</div></div>
+<div class="ttc" id="astructlista_html_a33ee6c47f36562c0d15c84bb938f0f0c"><div class="ttname"><a href="structlista.html#a33ee6c47f36562c0d15c84bb938f0f0c">lista::cantidad</a></div><div class="ttdeci">int cantidad</div><div class="ttdef"><b>Definition</b> lista.h:28</div></div>
+<div class="ttc" id="astructlista_html_a8b0e368ddca30f0abb44378e258bf7eb"><div class="ttname"><a href="structlista.html#a8b0e368ddca30f0abb44378e258bf7eb">lista::primera</a></div><div class="ttdeci">celda_t * primera</div><div class="ttdef"><b>Definition</b> lista.h:27</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CuentaPalabras: Archivo de código fuente C:/Users/Usuario/Desktop/P-Comision-04/multiset.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">CuentaPalabras<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">C:/Users/Usuario/Desktop/P-Comision-04/multiset.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="multiset_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MULTISET_H_INCLUDED</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MULTISET_H_INCLUDED</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="lista_8h.html">lista.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">struct </span><a class="code hl_struct" href="structtrie.html">trie</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="multiset_8h.html#a75b9ec35513b4691ad1e6af3cd2d9683">    7</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structtrie.html">trie</a> <a class="code hl_struct" href="structtrie.html">multiset_t</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//Crea un multiset vacio de palabras y lo devuelve.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">extern</span> <a class="code hl_struct" href="structtrie.html">multiset_t</a> *<a class="code hl_function" href="multiset_8h.html#a21d4ecf2bea00c3e6d4916a57cbd2a94">multiset_crear</a>();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//Inserta la palabra s al multiset m.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="multiset_8h.html#a6e1946fda5a79b3174e20ce4444bba82">multiset_insertar</a>(<a class="code hl_struct" href="structtrie.html">multiset_t</a> *m, <span class="keywordtype">char</span> *s);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//Devuelve la cantidad de repeticiones de la palabra s en el multiset m.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code hl_function" href="multiset_8h.html#a02ea5e46a0507b52851abfd06b55e3d0">multiset_cantidad</a>(<a class="code hl_struct" href="structtrie.html">multiset_t</a> *m, <span class="keywordtype">char</span> *s);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//Devuelve una lista de tipo lista t con todos los elementos del multiset m y la cantidad de apariciones de cada uno</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">extern</span> <a class="code hl_struct" href="structlista.html">lista_t</a> <a class="code hl_function" href="multiset_8h.html#af2a5e9ad454275a661750c2b20b35f34">multiset_elementos</a>(<a class="code hl_struct" href="structtrie.html">multiset_t</a> *m, <a class="code hl_enumeration" href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406">comparacion_resultado_t</a> (*f)(<a class="code hl_struct" href="structelemento.html">elemento_t</a>*, <a class="code hl_struct" href="structelemento.html">elemento_t</a>*));</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//Elimina el multiset m liberando el espacio de memoria reservado. Luego de la invocaci�on m debe valer NULL.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code hl_function" href="multiset_8h.html#a95e530e11cc6943ad7ce04e1c61a0db5">multiset_eliminar</a>(<a class="code hl_struct" href="structtrie.html">multiset_t</a> **m);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">// MULTISET_H_INCLUDED</span></div>
+<div class="ttc" id="alista_8h_html"><div class="ttname"><a href="lista_8h.html">lista.h</a></div></div>
+<div class="ttc" id="alista_8h_html_a87e2608c75f5d20919ac20631d4ec406"><div class="ttname"><a href="lista_8h.html#a87e2608c75f5d20919ac20631d4ec406">comparacion_resultado_t</a></div><div class="ttdeci">comparacion_resultado_t</div><div class="ttdef"><b>Definition</b> lista.h:7</div></div>
+<div class="ttc" id="amultiset_8h_html_a02ea5e46a0507b52851abfd06b55e3d0"><div class="ttname"><a href="multiset_8h.html#a02ea5e46a0507b52851abfd06b55e3d0">multiset_cantidad</a></div><div class="ttdeci">int multiset_cantidad(multiset_t *m, char *s)</div><div class="ttdoc">multiset_cantidad(multiset_t *m, char *s).</div><div class="ttdef"><b>Definition</b> multiset.c:119</div></div>
+<div class="ttc" id="amultiset_8h_html_a21d4ecf2bea00c3e6d4916a57cbd2a94"><div class="ttname"><a href="multiset_8h.html#a21d4ecf2bea00c3e6d4916a57cbd2a94">multiset_crear</a></div><div class="ttdeci">multiset_t * multiset_crear()</div><div class="ttdoc">*multiset_crear().</div><div class="ttdef"><b>Definition</b> multiset.c:25</div></div>
+<div class="ttc" id="amultiset_8h_html_a6e1946fda5a79b3174e20ce4444bba82"><div class="ttname"><a href="multiset_8h.html#a6e1946fda5a79b3174e20ce4444bba82">multiset_insertar</a></div><div class="ttdeci">void multiset_insertar(multiset_t *m, char *s)</div><div class="ttdoc">multiset_insertar(multiset_t *m, char *s).</div><div class="ttdef"><b>Definition</b> multiset.c:49</div></div>
+<div class="ttc" id="amultiset_8h_html_a95e530e11cc6943ad7ce04e1c61a0db5"><div class="ttname"><a href="multiset_8h.html#a95e530e11cc6943ad7ce04e1c61a0db5">multiset_eliminar</a></div><div class="ttdeci">void multiset_eliminar(multiset_t **m)</div><div class="ttdoc">multiset_eliminar(multiset_t **m).</div><div class="ttdef"><b>Definition</b> multiset.c:94</div></div>
+<div class="ttc" id="amultiset_8h_html_af2a5e9ad454275a661750c2b20b35f34"><div class="ttname"><a href="multiset_8h.html#af2a5e9ad454275a661750c2b20b35f34">multiset_elementos</a></div><div class="ttdeci">lista_t multiset_elementos(multiset_t *m, comparacion_resultado_t(*f)(elemento_t *, elemento_t *))</div><div class="ttdef"><b>Definition</b> multiset.c:168</div></div>
+<div class="ttc" id="astructelemento_html"><div class="ttname"><a href="structelemento.html">elemento</a></div><div class="ttdef"><b>Definition</b> lista.h:13</div></div>
+<div class="ttc" id="astructlista_html"><div class="ttname"><a href="structlista.html">lista</a></div><div class="ttdef"><b>Definition</b> lista.h:26</div></div>
+<div class="ttc" id="astructtrie_html"><div class="ttname"><a href="structtrie.html">trie</a></div><div class="ttdef"><b>Definition</b> multiset.c:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
